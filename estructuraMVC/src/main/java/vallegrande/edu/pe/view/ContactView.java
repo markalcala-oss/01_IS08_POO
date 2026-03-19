@@ -42,7 +42,7 @@ public class ContactView extends JFrame {
         setContentPane(contentPanel);
 
         // Tabla con modelo y estilo
-        tableModel = new DefaultTableModel(new String[]{"ID", "Nombre", "Email", "Teléfono"}, 0) {
+        tableModel = new DefaultTableModel(new String[]{"ID", "Nombre", "Email", "Teléfono","direccion","empresa","ciudad","pais"}, 0) {
             @Override public boolean isCellEditable(int row, int column) { return false; }
         };
         table = new JTable(tableModel);
