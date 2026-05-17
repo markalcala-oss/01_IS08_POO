@@ -1,5 +1,5 @@
 package vallegrande.edu.pe.controller;
-
+import java.util.List;
 import vallegrande.edu.pe.model.Plato;
 import vallegrande.edu.pe.model.PlatoDAO;
 
@@ -13,5 +13,8 @@ public class PlatoController {
         } else {
             System.out.println("Error al intentar guardar el plato.");
         }
+    }
+    public List<Plato> listarPlatos() {
+        return dao.listar();
     }
 }
